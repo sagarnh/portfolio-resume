@@ -1,0 +1,30 @@
+<header id="header" *ngIf="!mobHeader">
+  <div class="d-flex flex-column">
+    <div class="profile">
+      <img src="assets/images/sagar-2.png" alt="profile-picture" class="img-fluid rounded-circle"> 
+      <h1 class="text-light">Sagar</h1>
+    </div>
+  </div>
+  <nav class="nav-menu">
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" routerLink="/home" routerLinkActive="active"><fa-icon [icon]="faHome"></fa-icon>Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/about" routerLinkActive="active"><fa-icon [icon]="faUser"></fa-icon>About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/resume" routerLinkActive="active"><fa-icon [icon]="faFilePdf"></fa-icon>Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact" routerLinkActive="active"><fa-icon [icon]="faAddressBook"></fa-icon>Contact</a>
+      </li>
+    </ul>
+
+  </nav>
+  <button type="button" (click)="clickItem()" class="mobile-nav-toggle d-xl-none">
+  <fa-icon [icon]="faBars"aria-hidden="true" *ngIf="status"></fa-icon>
+  <fa-icon [icon]="faTimes"aria-hidden="true" *ngIf="!status"></fa-icon>
+</button>
+</header>
+

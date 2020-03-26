@@ -1,0 +1,69 @@
+<div id="contact-row">
+      <div class="contact">
+          <h2>Contact</h2>
+           <div class="row">
+           <div class="col-lg-5">
+        <div class="info">
+        <div class="phone">
+          <fa-icon [icon]="faMobile"></fa-icon>
+          <p>+91 8842841597</p>
+        </div>
+        <div class="email">
+          <fa-icon [icon]="faEnvelope"></fa-icon>
+          <p>sagarnh27@gmail.com</p>
+        </div>
+        <div class="twitter">
+          <i class="fab fa-twitter"> </i>
+          <p><a class="twitter-follow-button"
+  href="https://twitter.com/Sagarnh27Sagar"
+  data-size="large">
+  Follow</a></p>
+  
+        </div>
+        <div class="linkedin">
+          <i class="fab fa-linkedin"></i>
+          <p><a
+  href="https://www.linkedin.com/in/sagar-n-h-7b811a112/"
+  data-size="large">
+  Connect</a></p>
+        </div>
+        <div class="linkedin">
+          <fa-icon [icon]="faMapMarker"></fa-icon>
+          <p>Nidaghatta, Kadur -577548</p>
+        </div>
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="409" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=13%C2%B024'03.1%22N%2076%C2%B002'34.0%22E&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com"></a></div><style>.mapouter{position:relative;text-align:left;height:500px;width:350px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:350px;}</style></div>
+        </div>
+           </div>
+           <div class="col-lg-7">
+              <form [formGroup]="contactForm" class="formpad" (ngSubmit)="onSubmit()" *ngIf="!hideform">
+                  <div class="form-row">
+                      <div class="form-group col-md-6">
+                             <label for="name">Your Name</label>
+                             <input type="text" name="name" class="form-control" formControlName="name" id="name" [ngClass]="{ 'is-invalid': (f.name.touched)  && f.name.errors }"/>
+                             <div *ngIf="f.name.touched || f.name.errors" class="invalid-feedback">
+                              <span *ngIf="f.name.errors">First Name is required</span>
+                             </div>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="name">Your Email</label>
+                        <input type="email" class="form-control" name="email" formControlName="email" id="email" [ngClass]="{ 'is-invalid': (f.email.touched)  && f.email.errors }" />
+                        <div *ngIf="f.email.touched || f.email.errors" class="invalid-feedback">
+                        <span *ngIf="f.email.errors">email is required</span>
+                        </div>
+                       </div>
+                  </div>
+                  <div class="form-group">
+                            <label for="name">Subject</label>
+                            <input type="text" class="form-control" name="subject" formControlName="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" [ngClass]="{ 'is-invalid': (f.subject.touched)  && f.subject.errors }" />
+                  </div>
+                  <div class="form-group">
+                            <label for="name">Message</label>
+                            <textarea class="form-control" name="message" formControlName="message" rows="10" data-rule="required" data-msg="Please write something for us" [ngClass]="{ 'is-invalid': (f.message.touched)  && f.message.errors }"></textarea>
+                  </div>
+                  <div class="text-center"><button type="submit"  class="btn btn-primary" [disabled]="!contactForm.valid" >Send Message</button></div>
+              </form>
+           </div>
+      </div>
+</div>
+  
+  

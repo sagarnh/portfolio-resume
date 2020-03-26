@@ -1,0 +1,131 @@
+
+  <div id="resume-row">
+   <div class="resume">
+    <h2>Resume</h2>
+    <!-- <div class="row">
+      <div class="col-lg-6 col-md-6 col-xs-6">
+    <h3 class="resume-title">Education </h3>
+    <div class="resume-item">
+      <h4>Bachelor Of Engineering </h4>
+       <h5>2013-2017</h5>  
+       <h6>CGPA: 8.25 </h6> 
+    </div>
+    <div class="resume-item">
+      <h4> Intermdiate</h4>
+       <h5>2011-2013</h5>  
+       <h6>percentage: 84.9 </h6> 
+    </div>
+    <div class="resume-item">
+      <h4> Class 10th</h4>
+       <h5>2010-2011</h5>  
+       <h6>percentage: 92.8 </h6> 
+    </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-xs-6">
+        <h3 class="resume-title">Education </h3>
+        <div class="resume-item">
+          <h4>Bachelor Of Engineering </h4>
+           <h5>2013-2017</h5>  
+           <h6>CGPA: 8.25 </h6> 
+        </div>
+        <div class="resume-item">
+          <h4> Intermdiate</h4>
+           <h5>2011-2013</h5>  
+           <h6>percentage: 84.9 </h6> 
+        </div>
+        <div class="resume-item">
+          <h4> Class 10th</h4>
+           <h5>2010-2011</h5>  
+           <h6>percentage: 92.8 </h6> 
+        </div>
+      </div>
+    </div> -->
+    <div class="card"> 
+    <h5 class="card-header pointerCursor" (click)="panelExpanded = !panelExpanded">Education <span class="floatRigth"><fa-icon [icon]="faChevronRight" *ngIf="!panelExpanded"></fa-icon><fa-icon [icon]="faChevronDown" *ngIf="panelExpanded"></fa-icon></span></h5>
+    <div class="card-body" *ngIf="panelExpanded">
+      <div class="resume-item">
+        <h4>Bachelor Of Engineering </h4>
+         <h5>2013-2017</h5>  
+         <h6>CGPA: 8.25 </h6> 
+      </div>
+      <div class="resume-item">
+        <h4> Intermdiate</h4>
+         <h5>2011-2013</h5>  
+         <h6>Percentage: 84.9 </h6> 
+      </div>
+      <div class="resume-item"> 
+        <h4> Class 10th</h4>
+         <h5>2010-2011</h5>  
+         <h6>Percentage: 92.8 </h6> 
+      </div>
+      
+    </div>
+    </div>
+    <div style="padding:3px"></div>
+    <div class="card"> 
+      <h5 class="card-header pointerCursor" (click)="panelExpanded1 = !panelExpanded1">Professional Experience <span class="floatRigth"><fa-icon [icon]="faChevronRight" *ngIf="!panelExpanded1"></fa-icon><fa-icon [icon]="faChevronDown" *ngIf="panelExpanded1 "></fa-icon></span></h5>
+      <div class="card-body" *ngIf="panelExpanded1">  
+        <div class="resume-item">
+          <h4>Tata Conultancy Services</h4>
+           <h5> 2017 -Present </h5>  
+           <div class="project">
+           <h6>Project#1 : Waste tracking system </h6> 
+           <p>Description: Developed a web application to store the data about waste generation in different sites of a chemical company and to generate the reports on the workflow</p>
+           <p>Technologies Involved: MVC, Entity Framework, SQL Server, JQuery, Bootstrap.</p>
+           <div> Responsibilities:</div>
+           <ul>
+             <li>
+              Created the required table structures and stored procedures in SQL server.
+             </li>
+             <li>
+              Developed friendly UI for the application using HTML 5, Bootstrap, CSS, and JQuery.
+             </li>
+             <li>
+              Generated necessary code logic to perform CRUD operations using MVC , Linq and Entity Framework
+             </li>
+           </ul>
+           </div>
+           <div class="project">
+            <h6>Project#2 : Delrin Cleaning Scope</h6> 
+            <p>Description:Developed a single page application (SPA) using Angular and web API to store and manage the cleaning details related to the materials manufactured by chemical company.</p>
+            <p>Technologies Involved: web API, entity Framework, SQL Server, Angular, Bootstrap.</p>
+            <div> Responsibilities:</div>
+            <ul>
+              <li>
+               Created the required table structures and stored procedures in SQL server.
+              </li>
+              <li>
+               Developed friendly UI for the application using HTML 5, Bootstrap and CSS.
+              </li>
+              <li>
+               Generated necessary code logic to perform CRUD operations.
+              </li>
+              <li>
+                Used Entity Framework and Linq.
+              </li>
+              <li>
+                Created a Web Job for sending daily and monthly reports.
+              </li>
+            </ul>
+            </div>
+
+        </div>      
+      </div>
+    </div>
+    <div style="padding:3px"></div>
+    <div class="card"> 
+      <h5 class="card-header pointerCursor" (click)="panelExpanded11 = !panelExpanded11">Personal Details <span class="floatRigth"><fa-icon [icon]="faChevronRight" *ngIf="!panelExpanded11"></fa-icon><fa-icon [icon]="faChevronDown" *ngIf="panelExpanded11"></fa-icon></span></h5>
+      <div class="card-body" *ngIf="panelExpanded11">
+        <div class="resume-item">
+          <p>Gender: Male</p>
+          <p>Langauges Known: English, Kannada , Hindi</p> 
+          <p>Address: S/O Hemaraj N H, Nidaghatta, Kadur , Chikkamagaluru - 577548</p>
+        </div>
+        
+      </div>
+    </div>
+    <div style="padding:3px"></div>
+    <button type="button" class="btn btn-primary">Download Resume</button>
+   </div>
+  </div>
+

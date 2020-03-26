@@ -1,0 +1,81 @@
+.contact{
+    background: #f5f8fd
+}
+#contact-row{
+    margin-left: 200px;
+}
+.contact-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #1f5297;
+    position: relative;
+  }
+.contact h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #173b6c;
+    font-family: "Poppins", sans-serif;
+  }
+.contact h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #149ddd;
+    bottom: 0;
+    left: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.contact .info fa-icon, .contact .info i {
+    font-size: 20px;
+    color: #149ddd;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #dff3fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+  .contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #050d18;
+  }  
+  .contact .info p {
+    padding: 0 0 10px 60px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #173b6c;
+  }
+  .email, .twitter, .linkedin{
+      padding-top: 10px;
+  }
+@media (max-width: 480px) {
+    #contact-row {
+      margin: 0;
+    }
+    form{
+      padding-top: 10px;
+    }
+
+  }
+@media (min-width: 768px) and (max-width:1024px) {
+    #contact-row {
+      margin: 0;
+    }
+    form{
+      padding-top: 20px;
+    }
+  }
